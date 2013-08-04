@@ -1,0 +1,21 @@
+/*
+	Put anything you reference with "url()" in ../assets/
+	This way, you can minify your application, and just remove the "source" folder for production
+*/
+.nice-padding {
+	padding: 15px;
+}
+
+body {
+	background: #000;
+}
+
+canvas {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -510px;
+	margin-top: -384px;
+	border: 3px orange solid;
+}
