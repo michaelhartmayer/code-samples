@@ -1,0 +1,103 @@
+<!-- Siteskin Component: Left -->
+<script id="tmpl_siteskin_left" type="text/html">
+  <div id="siteskin-left" class="siteskin-component {{#if locking}}side-locking{{/if}}">
+    <a href="http://ad.doubleclick.net/jump/ev_home/left;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" {{#if blank}}target="_blank"{{/if}}>
+      <img src="http://ad.doubleclick.net/ad/ev_home/left;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" border="0" alt="" class="siteskin-tracking-px" />
+    </a>
+    {{#if content}}<div id="siteskin-left-content" class="content">{{safeHtml content}}</div>{{/if}}
+  </div>
+</script>
+
+<!-- Siteskin Component: Right -->
+<script id="tmpl_siteskin_right" type="text/html">
+  <div id="siteskin-right" class="siteskin-component {{#if locking}}side-locking{{/if}}">
+    <a href="http://ad.doubleclick.net/jump/ev_home/right;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" {{#if blank}}target="_blank"{{/if}}>
+      <img src="http://ad.doubleclick.net/ad/ev_home/right;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" border="0" alt="" class="siteskin-tracking-px" />
+    </a>
+    {{#if content}}<div id="siteskin-right-content" class="content">{{safeHtml content}}</div>{{/if}}
+  </div>
+</script>
+
+<!-- Siteskin Component: Pencil -->
+<script id="tmpl_siteskin_pencil" type="text/html">
+  <div id="siteskin-pencil" class="siteskin-component">
+    <a href="http://ad.doubleclick.net/jump/ev_home/pencil;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" {{#if blank}}target="_blank"{{/if}}>
+      <img src="http://ad.doubleclick.net/ad/ev_home/pencil;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" border="0" alt="" class="siteskin-tracking-px" />
+    </a>
+    {{#if content}}<div id="siteskin-pencil-content" class="content">{{safeHtml content}}</div>{{/if}}
+  </div>
+</script>
+
+<!-- Siteskin Component: Pencil Big -->
+<script id="tmpl_siteskin_pencil_big" type="text/html">
+  <div id="siteskin-pencil-big-container" class="siteskin-component">
+    <div id="siteskin-pencil-big">
+      <a href="http://ad.doubleclick.net/jump/ev_home/pencil;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" {{#if blank}}target="_blank"{{/if}}>
+        <img src="http://ad.doubleclick.net/ad/ev_home/pencil;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" border="0" alt="" class="siteskin-tracking-px" />
+      </a>
+      {{#if content}}<div id="siteskin-pencil-big-content" class="content">{{safeHtml content}}</div>{{/if}}
+    </div>
+  </div>
+</script>
+
+<!-- Siteskin Component: Slider -->
+<script id="tmpl_siteskin_slider" type="text/html">
+  <div id="siteskin-slider" class="siteskin-component {{#if fixed}}slider-fixed{{/if}} {{#if lazy}}slider-lazy{{/if}}">
+    {{#unless fixed}}<div class="close-box">&#215;</div>{{/unless}}
+    <a href="http://ad.doubleclick.net/jump/ev_home/slider;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" id="siteskin-hero" {{#if blank}}target="_blank"{{/if}}>
+      <img src="http://ad.doubleclick.net/ad/ev_home/slider;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" border="0" alt="" class="siteskin-tracking-px" />
+    </a>
+    <div id="siteskin-video">
+      {{#if flowplayer}}
+        {{#if flowplayer.overlay}}
+          <span id="siteskin-video-bar">
+            <span>{{safeHtml flowplayer.overlay}}</span>
+          </span>
+        {{/if}}
+        <div id="siteskin-video-container"></div>
+      {{/if}}
+      {{#if youtube}}
+        <iframe width="100%" height="100%" src="http://www.youtube.com/embed/{{youtube.id}}?rel=0&amp;hd=1{{#if youtube.autoplay}}&amp;autoplay=1{{/if}}" frameborder="0" allowfullscreen="true" id="siteskin-yt-video"></iframe>
+      {{/if}}
+    </div>
+    {{#if content}}<div id="siteskin-slider-content" class="content">{{safeHtml content}}</div>{{/if}}
+  </div>
+</script>
+
+<!-- Siteskin Component: Slider Big -->
+<script id="tmpl_siteskin_slider_big" type="text/html">
+  <div id="siteskin-slider-big-container" class="siteskin-component {{#if fixed}}slider-fixed{{/if}} {{#if lazy}}slider-lazy{{/if}}">
+    {{#unless fixed}}<div class="close-box">&#215;</div>{{/unless}}
+    <div id="siteskin-slider-big">
+      <a href="http://ad.doubleclick.net/jump/ev_home/slider;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" id="siteskin-hero" {{#if blank}}target="_blank"{{/if}}>
+        <img src="http://ad.doubleclick.net/ad/ev_home/slider;cid=skin_{{campaign_key}};sz=1x1;ord={{ord}}?" border="0" alt="" class="siteskin-tracking-px" />
+      </a>
+      <div id="siteskin-video">
+        {{#if flowplayer}}
+          {{#if flowplayer.overlay}}
+            <span id="siteskin-video-bar">
+              <span>{{safeHtml flowplayer.overlay}}</span>
+            </span>
+          {{/if}}
+          <div id="siteskin-video-container"></div>
+        {{/if}}
+        {{#if youtube}}
+          <iframe width="100%" height="100%" src="http://www.youtube.com/embed/{{youtube.id}}?rel=0&amp;hd=1{{#if youtube.autoplay}}&amp;autoplay=1{{/if}}" frameborder="0" allowfullscreen="true" id="siteskin-yt-video"></iframe>
+        {{/if}}
+      </div>
+      {{#if content}}<div id="siteskin-slider-content">{{safeHtml content}}</div>{{/if}}
+    </div>
+  </div>
+</script>
+
+<!-- Siteskin Component: Header -->
+<script id="tmpl_siteskin_header" type="text/html">
+  <div id="siteskin-header" class="siteskin-component">
+    <a href="{{url}}" title="{{title}}" {{#if blank}}target="_blank"{{/if}}>
+      {{#if img}}
+        <img src="{{img}}" alt="{{title}}" />
+      {{/if}}
+    </a>
+    {{#if content}}<div id="siteskin-header-content">{{safeHtml content}}</div>{{/if}}
+  </div>
+</script>

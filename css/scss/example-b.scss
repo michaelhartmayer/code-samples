@@ -1,0 +1,52 @@
+/* Color Theme */
+$border-dark:   #888;
+$border-light:  #AAA;
+$surface-dark:  #CCC;
+
+/* Mixins */
+@mixin simple-shadow ($spread, $intensity, $color){
+  -webkit-box-shadow: 0px 0px $spread $intensity $color;
+          box-shadow: 0px 0px $spread $intensity $color;
+}
+
+/* Dev Modal */
+.devmodal {
+  border: 1px solid $border-dark;
+  padding: 10px 50px;
+  background: $surface-dark;
+  display: none;
+  @include simple-shadow (5px, 0px, #999);
+
+  /* Title */
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font: {
+      size: 1.2em;
+      color: #000;
+    }
+  }
+
+  /* Options */
+  .options {
+    margin-bottom: 20px;
+
+    .option {
+      padding: 5px;
+      input {
+        margin: 3px 0;
+        padding: 2px;
+      }
+    }
+  }
+
+  /* Resolution */
+  .resolution {
+    text-align: center;
+
+    button {
+      padding: 10px 25px;
+    }
+  }
+}
